@@ -2,53 +2,20 @@
 <html>
   <head>
 	<title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-    <style type="text/css" media="screen">
-      #header {
-        width: 1220px;
-        background-color: #fbfbfb;
-        font-family: "Helvetica-Neue";
-      }
-      #logo {
-        font-family: "Helvetica-Neue";
-        font-size: 50px;
-        position: relative;
-        left: 30px;
-        top: 30px;
-      }
-      #tagline {
-        font-family: "Helvetica-Neue";
-        font-size: 25px;
-        left: 205px;
-        /*left: 35px;*/
-        position: relative;
-		top:-25px;
-        /*top: 30px;*/
-      }
-      #header_contact_info {
-        font-family: "Helvetica-Neue";
-        font-size: 16px;
-        position: relative;
-		top: -20px;
-        left: 205px;
-        /*top: 45px;*/
-      }
-    </style>
+    <%= render 'layouts/shim' %>
+
+
   </head>
   <body>
-  <div id="header">
-  	<div id="logo">
-  		<strong>Maton</strong>
-    </div>
-    <div id = "tagline">
-    	Education Technology, Games & Visual Communication
-    </div>
-    <div id = "header_contact_info">
-    	@nathanmaton        nathanmaton@gmail.com      (301) 641-8246
-    </div>
-  </div>
-    <%= yield %>
+      <%= render 'layouts/header' %>
+	
+	  <div class="container">
+		<%= yield %>
+	  </div>  
+        <%= render 'layouts/footer' %>
+
   </body>
 </html>
