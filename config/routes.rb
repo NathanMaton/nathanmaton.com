@@ -1,4 +1,13 @@
 App3SkipTest::Application.routes.draw do
+  get "blog/new"
+  get "blog/show"
+  get "blog/show_all"
+  get "blog/show_single"
+  get "blog/test_bullshit"
+  match "/blog/show/:id" => "blog#show"
+  match "/blog/show_single/:id" => "blog#show_single"
+
+  
   get "users/new"
 
   root to: 'static_pages#home'
@@ -9,8 +18,12 @@ App3SkipTest::Application.routes.draw do
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
 
-
-
+  #resources :blog 
+  
+ 
+  
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

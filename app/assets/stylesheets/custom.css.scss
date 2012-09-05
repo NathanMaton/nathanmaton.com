@@ -3,6 +3,7 @@
 
 $cream: #fbfbfb;
 $darkgrey: #272727;
+$orange: #ff9933;
 
 /* universal */
 
@@ -105,13 +106,31 @@ left: -25px;
 .main_container {
 padding-top: 30px;
 padding-left: 30px;
-
 }
 
-.large_image {
+.featured {
 padding-right:4px;
 padding-bottom: 4px;
 display: inline-table;
+width: 320px;
+height: 320px;
+
+}
+
+#img_label {
+color: white;
+font-family: Arial;
+font-size: 20px;
+background-color: $orange;
+position: absolute;
+float:left;
+padding:4px 20px 4px 10px;
+bottom:20px;
+}
+
+
+.large_image {
+
 }
 
 /* FOOTER  from Rails Tutorial */

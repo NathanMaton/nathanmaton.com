@@ -1,0 +1,12 @@
+<div class="main_container">
+
+<% @imgshow.each do |img| %>
+   <section class="featured">
+   <%= link_to image_tag(img.filename), 'http://rubyonrails.org/', :class => "large_image" %>
+    <p id="img_label"> <%= img.caption %></p>
+   </section> 
+<% end %>
+
+
+</div>
+
