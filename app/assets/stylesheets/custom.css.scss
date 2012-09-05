@@ -2,6 +2,7 @@
 
 
 $cream: #fbfbfb;
+$darkgrey: #272727;
 
 /* universal */
 
@@ -11,7 +12,11 @@ html {
 }
 
 body {
+
  /* padding-top: 60px;*/
+ /* bg color ADDED BY NATHAN 9.3.12 */
+ background-color: $darkgrey;
+
 }
 
 section {
@@ -92,6 +97,21 @@ font-size: 14px;
 padding-top: 5px;
 position: relative;
 left: -25px;
+}
+
+
+/* BODY */
+
+.main_container {
+padding-top: 30px;
+padding-left: 30px;
+
+}
+
+.large_image {
+padding-right:4px;
+padding-bottom: 4px;
+display: inline-table;
 }
 
 /* FOOTER  from Rails Tutorial */
