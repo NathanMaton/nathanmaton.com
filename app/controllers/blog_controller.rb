@@ -13,13 +13,7 @@ class BlogController < ApplicationController
   def show_single
   	@testvar = Blog.find(params[:id])
   	@img_url = @testvar.filename
-  	#if @testvar.id == true
-  	#	redirect_to (@testvar)
-  	#else 
-  	#	render "test_bullshit"
-  	#end
   	
-  	#render :layout => false
   end
   
   def test_bullshit

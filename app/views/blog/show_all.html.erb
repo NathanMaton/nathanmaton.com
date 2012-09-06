@@ -2,21 +2,21 @@
 
 <% @showf.each do |img| %>
    <section class="featured">
-   <%= link_to image_tag(img.filename), blog_path("show_single/" + img.id.to_s), :class => "large_image" %>
+   <%= link_to image_tag(img.filename), "/blog/show_single/" + img.id.to_s, :class => "large_image" %>
     <p id="img_label"> <%= img.caption %></p>
    </section> 
 <% end %>
 
 <% @showreg.each do |img| %>
    <section class="regular">
-   <%= link_to image_tag(img.filename), blog_path("show_single/" + img.id.to_s), :class => "large_image" %>
+   <%= link_to image_tag(img.filename), "/blog/show_single/" + img.id.to_s, :class => "large_image" %>
     <p id="img_label"> <%= img.caption %></p>
    </section> 
 <% end %>
 
 <% @showreg.each do |img| %>
    <section class="regular">
-   <%= link_to image_tag(img.filename), blog_path("show_single/" + img.id.to_s), :class => "large_image" %>
+   <%= link_to image_tag(img.filename), "/blog/show_single/" + img.id.to_s, :class => "large_image" %>
     <p id="img_label"> <%= img.caption %></p>
    </section> 
 <% end %>
