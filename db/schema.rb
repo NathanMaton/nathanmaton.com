@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120906002738) do
+ActiveRecord::Schema.define(:version => 20120906043149) do
 
   create_table "abusers", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,10 @@ ActiveRecord::Schema.define(:version => 20120906002738) do
     t.datetime "updated_at", :null => false
     t.boolean  "isfeatured"
     t.string   "subcaption"
+    t.string   "full_img1"
+    t.string   "full_img2"
+    t.string   "full_title"
+    t.string   "full_body"
   end
 
   create_table "users", :force => true do |t|

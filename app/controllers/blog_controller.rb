@@ -13,7 +13,11 @@ class BlogController < ApplicationController
   def show_single
   	@testvar = Blog.find(params[:id])
   	@img_url = @testvar.filename
-  	
+  	@full_img1 = @testvar.full_img1
+    @full_img2 = @testvar.full_img2
+    @full_title = @testvar.full_title
+    @full_body = @testvar.full_body
+   
   end
   
   def test_bullshit
@@ -22,6 +26,8 @@ class BlogController < ApplicationController
   def show
    @testvar = Blog.find(params[:id])
    @img_url = @testvar.filename
+   
+   
   end
   
   def code_image

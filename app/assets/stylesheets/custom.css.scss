@@ -4,6 +4,7 @@
 $cream: #fbfbfb;
 $darkgrey: #272727;
 $orange: #ff9933;
+$lightpurple: #99F;
 
 /* universal */
 
@@ -140,6 +141,29 @@ padding:4px 20px 4px 10px;
 .large_image {
 
 }
+
+/* INSIDE PAGE STYLES */
+#full_img{
+overflow:hidden;
+width:630px;
+padding-bottom: 4px;
+}
+
+#img_caption{
+width:300px;
+height:250px;
+background-color: $lightpurple;
+float:left;
+display: inline;
+color: white;
+position: absolute;
+left: 664px;
+top: 130px;
+
+padding: 20px 20px 20px 20px;
+font-family: Arial;
+}
+
 
 /* FOOTER  from Rails Tutorial */
 /* footer */

@@ -1,6 +1,13 @@
 <div class="main_container">
-<%= link_to image_tag(@img_url), "/blog/show_single/1" %>
-
+	<div id="full_img"><%= image_tag(@full_img1) %></div>
+	<div id="full_img"><%= image_tag(@full_img2) %></div>
+	<div id="img_caption">
+		
+		<h2><%= @full_title %></h2>
+		<br>
+		<%= @full_body.html_safe %>
+	
+	</div>
 
 </div>
 

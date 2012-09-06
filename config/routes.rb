@@ -1,7 +1,7 @@
 App3SkipTest::Application.routes.draw do
   get "blog/new"
   get "blog/show"
-  get "blog/show_all"
+  root to: "blog#show_all"
   get "blog/show_single"
   get "blog/test_bullshit"
   match "/blog/show/:id" => "blog#show"
@@ -10,7 +10,7 @@ App3SkipTest::Application.routes.draw do
   
   get "users/new"
 
-  root to: 'static_pages#home'
+  #root to: 'static_pages#home'
 
   match '/signup',  to: 'users#new'
 
