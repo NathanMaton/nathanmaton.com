@@ -3,8 +3,10 @@ class BlogController < ApplicationController
   end
   
   def show_all
-  	@imgshow = Blog.all
-  	
+  	@showf = Blog.where(isfeatured:true)
+  	@showreg = Blog.where(isfeatured:false)
+  	#@testvar = Blog.find(params[:id])
+
   	#render :layout => false
   end
   
@@ -17,7 +19,7 @@ class BlogController < ApplicationController
   	#	render "test_bullshit"
   	#end
   	
-  	render :layout => false
+  	#render :layout => false
   end
   
   def test_bullshit
