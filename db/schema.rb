@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120905011424) do
+ActiveRecord::Schema.define(:version => 20120906002738) do
 
   create_table "abusers", :force => true do |t|
     t.string   "name"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(:version => 20120905011424) do
     t.string   "caption"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.boolean  "isfeatured"
+    t.string   "subcaption"
   end
 
   create_table "users", :force => true do |t|
