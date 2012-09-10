@@ -16,6 +16,7 @@ class Blog < ActiveRecord::Base
   #generate images
   	#create a variable to store result
 	@result = []
+	@t_test = []
   	#pull all records from database
   	@all_images = Blog.all
   	#iterate through each one and display the file name
