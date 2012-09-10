@@ -3,27 +3,33 @@
 <% @showf.each do |img| %>
    <section class="featured">
    <%= link_to image_tag(img.filename), "/blog/show_single/" + img.id.to_s, :class => "large_image" %>
-    <p id="img_label"> <%= img.caption %></p>
+    <p id="img_label"> <%= img.caption %>
+    <br>
+    <span id="subcaption"> <%= img.subcaption =%> </span>
+    </p>
    </section> 
 <% end %>
 
 <% @showreg.each do |img| %>
    <section class="regular">
    <%= link_to image_tag(img.filename), "/blog/show_single/" + img.id.to_s, :class => "large_image" %>
-    <p id="img_label"> <%= img.caption %></p>
-   </section> 
+   <p id="img_label"> <%= img.caption %>
+    <br>
+    <span id="subcaption"> <%= img.subcaption =%> </span>   </section> 
 <% end %>
 
 <% @showreg.each do |img| %>
    <section class="regular">
    <%= link_to image_tag(img.filename), "/blog/show_single/" + img.id.to_s, :class => "large_image" %>
-    <p id="img_label"> <%= img.caption %></p>
+    <p id="img_label"> <%= img.caption %>
+    <br>
+    <span id="subcaption"> <%= img.subcaption =%> </span>
    </section> 
 <% end %>
 
    <section class="regular">
 	<%= link_to image_tag(@about[0].filename), "/blog/show_single/" + @about[0].id.to_s, :class => "large_image" %>
-    <p id="img_label"> <%= @about[0].caption %></p>
+    <p id="img_label_about"> <%= @about[0].caption %></p>
    </section> 
 
 </div>

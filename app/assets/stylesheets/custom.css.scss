@@ -39,6 +39,9 @@ textarea {
 
 /* NATHAN'S CUSTOM CSS */
 
+a{
+cursor: auto;
+}
 
 /*HEADER*/
 .header {
@@ -104,24 +107,33 @@ left: -25px;
 
 /* BODY */
 
+img {
+
+float:left;
+}
+
 .main_container {
+overflow: hidden;
 padding-top: 30px;
 padding-left: 30px;
 }
 
 .featured {
 padding-right:4px;
-padding-bottom: 27px;
-display: inline-table;
+padding-bottom: 4px;
 width: 320px;
+opacity: .9;
+
 height: 320px;
+float:left;
 
 }
 
 .regular {
 padding-right:4px;
-padding-bottom: 27px;
-display: inline-table;
+padding-bottom: 4px;
+float: left;
+opacity: .9;
 width: 320px;
 height: 170px;
 
@@ -130,11 +142,31 @@ height: 170px;
 #img_label {
 color: white;
 font-family: Arial;
+float:right;
+opacity:.9;
+margin-top:-70px;
 font-size: 20px;
 background-color: $orange;
-position: absolute;
+padding:8px 4px 6px 20px;
+}
+
+.img_label:hover, #img_label_about:hover, .regular:hover, .featured:hover {
+opacity: 1;
+}
+#img_label_about {
+color: white;
+font-family: Arial;
+float:right;
+margin-top:-70px;
+font-size: 20px;
+background-color: $orange;
+padding:8px 10px 16px 20px;
+}
+
+#subcaption{
+color: black;
+font-size: 10px;
 float:left;
-padding:4px 20px 4px 10px;
 }
 
 
@@ -170,10 +202,9 @@ font-family: Arial;
 
 footer {
   margin-top: 45px;
-  padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  border-top: 1px solid #eaeaea;
+  /* border-top: 1px solid #21D854;*/
   background-color: $cream;
   a {
   	color: #555; 
