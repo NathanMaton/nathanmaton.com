@@ -15,16 +15,8 @@
    <%= link_to image_tag(img.filename), "/blog/show_single/" + img.id.to_s, :class => "large_image" %>
    <p id="img_label"> <%= img.caption %>
     <br>
-    <span id="subcaption"> <%= img.subcaption =%> </span>   </section> 
-<% end %>
-
-<% @showreg.each do |img| %>
-   <section class="regular">
-   <%= link_to image_tag(img.filename), "/blog/show_single/" + img.id.to_s, :class => "large_image" %>
-    <p id="img_label"> <%= img.caption %>
-    <br>
-    <span id="subcaption"> <%= img.subcaption =%> </span>
-   </section> 
+    <span id="subcaption"> <%= img.subcaption =%> </span>   
+    </section> 
 <% end %>
 
    <section class="regular">
