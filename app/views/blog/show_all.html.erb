@@ -21,6 +21,10 @@
    </section> 
 <% end %>
 
+   <section class="regular">
+	<%= link_to image_tag(@about[0].filename), "/blog/show_single/" + @about[0].id.to_s, :class => "large_image" %>
+    <p id="img_label"> <%= @about[0].caption %></p>
+   </section> 
 
 </div>
 

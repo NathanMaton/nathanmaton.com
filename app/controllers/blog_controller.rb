@@ -6,6 +6,8 @@ class BlogController < ApplicationController
   	@showf = Blog.where(isfeatured:true)
   	@showreg = Blog.where(isfeatured:false)
   	#@testvar = Blog.find(params[:id])
+	@about = Blog.where(filename:'about.png')
+	#@about = Blog.find(7)
 
   	#render :layout => false
   end
