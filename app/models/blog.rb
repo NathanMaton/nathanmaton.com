@@ -10,7 +10,7 @@
 #
 
 class Blog < ActiveRecord::Base
-  attr_accessible :caption, :filename
+  attr_accessible :caption, :filename, :isfeatured, :subcaption, :full_img1, :full_img2, :full_title, :full_body
   
   def filename_array
   #generate images
