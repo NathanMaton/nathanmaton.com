@@ -12,7 +12,7 @@
 #  full_img1  :string(255)
 #  full_img2  :string(255)
 #  full_title :string(255)
-#  full_body  :string(255)
+#  full_body  :text(255)
 #
 
 class Blog < ActiveRecord::Base
