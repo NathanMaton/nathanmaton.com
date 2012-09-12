@@ -41,6 +41,7 @@ textarea {
 
 a{
 cursor: auto;
+color:white;
 }
 
 /*HEADER*/
@@ -184,7 +185,6 @@ padding-bottom: 4px;
 
 #img_caption{
 width:300px;
-height:250px;
 background-color: $lightpurple;
 float:left;
 display: inline;
@@ -193,7 +193,7 @@ position: absolute;
 left: 664px;
 top: 130px;
 
-padding: 20px 20px 20px 20px;
+padding: 20px 20px 40px 20px;
 font-family: Arial;
 }
 
