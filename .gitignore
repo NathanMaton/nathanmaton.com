@@ -13,3 +13,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Word Doc w/ seed content
+/SeedsFullBodyText.docx
