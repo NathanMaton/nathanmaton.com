@@ -1,4 +1,4 @@
-App3SkipTest::Application.routes.draw do
+Matonportfolio::Application.routes.draw do
   get "blog/new"
   get "blog/show"
   root to: "blog#show_all"

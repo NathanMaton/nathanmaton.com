@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-App3SkipTest::Application.load_tasks
+Matonportfolio::Application.load_tasks
