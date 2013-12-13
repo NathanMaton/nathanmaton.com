@@ -10,6 +10,15 @@
 #	Story portfolio should tell: Great learning designer/developer.
 #	Order of importance: #Gameful, #4see,  #SB45, #IVoted, #American Honors, #Operation Hire Me, #Pandora's Blocks, #BVW, #Get a clue
 
+# OpenIDEO
+	Blog.create(filename: 'openideo.png', caption: 'OpenIDEO', isfeatured: true, subcaption: 'Product Manager', full_img1: 'nathan_maton_openideo_meetups.png', full_img2: 'openideo_research.png', full_title: 'OpenIDEO', 
+	full_body:
+	'OpenIDEO is a website founded by Tom Hulme to help people collaborate globally for social impact. My role started as a Community Manager and then evolved into a product management.
+	<br><br>We\'ve learned a lot more about our community and how to drive impact and the amount of impact we see per challenge has been growing greatly in part due to my management of our product direction and experimenting with new community programs like our Meetups program.
+	<br><br>We\'re now growing very quickly and have rearchitectured our software for scalability and further impact. I\'ve helped lead a team of developers to keep our platform stable and guide them to a better product which is lauching early 2014.
+	<br><br>Please consider <a href="http://www.openideo.com/">joining our efforts</a> to help collectively solve pressing social issues. I look forward to seeing you on OpenIDEO. 
+	')
+
 # Gameful
 	Blog.create(filename: 'nathan_maton_gameful.png', caption: 'Gameful', isfeatured: true, subcaption: 'Community Manager', full_img1: 'nathan_maton_gameful_full.png', full_img2: 'nathan_maton_gameful_full_2.png', full_title: 'Gameful', 
 	full_body:
@@ -31,9 +40,16 @@
 # QuikAid
 #	Blog.create(filename: 'nathan_maton_4see.png', caption: '4see', isfeatured: true, subcaption: 'Lead Developer',full_img1: 'nathan_maton_4see_full.png', full_img2: 'nathan_maton_team_committment.png', full_title: '4see', full_body: 'Worked with several social entrepreneurship training programs to create a team building game to help youth train to overcome the most common barriers to their project\'s success. <br><br>  Our Kickstarter campaign didn\'t reach its goal and our team pursued other work.  I am very eager to find a great home for our work as there was a clear need we were filling.  If you are interested in learning more, please send me an email.')
 
+# Classraise
+	Blog.create(filename: 'classraise_campaign.png', caption: 'Classraise', isfeatured: false , subcaption: 'Developer', full_img1: 'classraise_homepage.png', full_img2: 'classraise_campaign_full.png', full_title: 'Classraise', 
+	full_body: 
+	'We all know teachers don\'t earn as much as many of them should yet they still spend on average $600 of their own money on class supplies. We wanted to give them a super quick way to crowdfund these small purchases. We formed a team as a teacher, an ed tech professional and two developers at San Francisco\'s Startup WeekendEdu event and won 2nd place for a prototype of Classraise. After the event we built out Classraise into a functioning crowd funding platform for teachers.
+	<br><br>I did the majority of the development with one other developer for this website in Rails and integrated Stripe into the program. We\'re currently running a few pilot campaigns.
+	<br><br>Are you a teacher? Do you know one? Please share <a href="http://www.classraise.com/">Classraise</a> with your friends or sign up and raise some money for your teaching supplies.
+	')
 
 # SB45
-	Blog.create(filename: 'nathan_maton_sb45_featured.png', caption: '#SB45', isfeatured: true , subcaption: 'Lead Producer', full_img1: 'nathan_maton_sb45_full.jpeg', full_img2: 'nathan_maton_sb45_full2.jpeg', full_title: '#SB45', 
+	Blog.create(filename: 'nathan_maton_sb45_home.png', caption: '#SB45', isfeatured: false , subcaption: 'Lead Producer', full_img1: 'nathan_maton_sb45_full.jpeg', full_img2: 'nathan_maton_sb45_full2.jpeg', full_title: '#SB45', 
 	full_body: 
 	'For the 45th Super Bowl Twitter partnered with the NFL and I worked leading a design team to build a real time streaming Twitter app displaying all the tweets of fans at the game.
 	<br><br>We finished an incredibly complex mobile app and microsite on a tight deadline.  We pleased four stakeholders on the project to the point where they all pursued further projects with us.  
@@ -64,7 +80,7 @@
 	Blog.create(filename: 'nathan_maton_pandoras_blocks.png', caption: 'Pandora\'s Blocks', isfeatured: false , subcaption: 'Game Designer & Developer', full_img1: 'nathan_maton_pandoras_blocks_full.png', full_img2: 'nathan_maton_pandoras_blocks_full2.png', full_title: 'Pandora\'s Blocks', 
 	full_body: 
 	'The community pick winner of the GMU Global Game Jam, Pandora\'s Blocks is best described as 3D Go.  It is an online multiplayer game.  The game is developed in Unity.  As a developer on the project I programmed most of the UI in C#.
-	<br><br>Pandora\'s Blocks is developed by myself, Martin Smith, Ala\' Diab and Bo Banducci.  <a href="http://martinwsmith.com/pandorasblocks/">Click here</a> to play.  
+	<br><br>Pandora\'s Blocks is developed by myself, Martin Smith, Ala\' Diab and Bo Banducci.  <a href="http://j.mp/IKvaXS">Click here</a> to play.  
 	')
 # BVW
 	Blog.create(filename: 'nathan_maton_bvw.png', caption: 'Beans vs. Waffles', isfeatured: false , subcaption: 'Developer', full_img1: 'nathan_maton_bvw_full.png', full_img2: 'nathan_maton_bvw_full2.png', full_title: 'Beans vs. Waffles', 
@@ -79,7 +95,9 @@
 
 #LAST: ABOUT	
 	Blog.create(filename: "about.png", caption: "About", isfeatured: nil, subcaption: "", full_img1: 'nathan_maton_about_full.jpg', full_img2: nil, full_title: "About", 
-	full_body: "Hello.  I\'m a Washington DC based educational technology developer and digital strategist.  
-	<br><br>Everyday I research and develop ways to tap into people\'s positive emotions to create learning opportunities.  Sometimes this involves working with school districts, colleges, corporations and more.  
-	<br><br>I\'ve managed worked with schools such as NYU, Penn State and Harvard as well as brands such as Google, The Economist, National Geographic, Zagat, Samsung, Nokia and more.  I\'d love to work with you.
-	<br><br>I hope to hear from you.  Click the email address to send me a message.")
+	full_body: "Hello.  I\'m a San Francisco based entrepreneur who is curious about what motivates people. Currently I\'m learning about this as a Product Manager at OpenIDEO. We\'re looking at how online and offline activities interact to create impact.  
+	<br><br>My background is in building communities and media products. I started as a community organizer then project managed large interactive social media visualizations. I fell in love with learning and write about learning innovation, have made learning games and developed websites for startups.  
+	<br><br>I hope that in my lifetime every learner in the world will have access to affordable learning experiences that put them in a flow state - maximizing a challenge without becoming overwhelmed. This aspiraton has put me in front of an amazing cast of clients as a speaker, teacher and movement maker. Some of the clients include Harvard, NYU, Penn State and community colleges across the country as well as brands such as Google, The Economist, National Geographic, Zagat, Samsung, Nokia and more.
+	<br><br>Anyways, it is definitely a work in progress. I hope to hear from you and learn how we can work together.
+	<br><br>Thanks,
+	<br><br>Nathan")
