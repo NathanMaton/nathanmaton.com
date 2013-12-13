@@ -4,7 +4,7 @@
 $cream: #fbfbfb;
 $darkgrey: #272727;
 $orange: #ff9933;
-$lightpurple: #99F;
+$lightpurple: #9999ff;
 
 /* universal */
 
@@ -19,6 +19,10 @@ body {
  /* bg color ADDED BY NATHAN 9.3.12 */
  background-color: $darkgrey;
 
+}
+
+h1{
+  font-family:'Arial'
 }
 
 section {
@@ -39,9 +43,18 @@ textarea {
 
 /* NATHAN'S CUSTOM CSS */
 
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
 a{
 cursor: auto;
-color:white;
+color:#9999ff;
 }
 
 /*HEADER*/
@@ -187,8 +200,8 @@ padding-bottom: 4px;
 #img_caption{
 width:300px;
 font-weight: bold;
-background-color: #C33;
-color: #480000;
+background-color: #fbfbfb;
+color: black;
 float:left;
 text-align: left;
 display: inline;
@@ -199,8 +212,14 @@ top: 130px;
 padding: 20px 20px 40px 20px;
 font-family: Arial;
 	h2{
-	color: white;
+	color: black;
+  font-family: 'Lato Bold';
+
 	}
+}
+
+.bodyText{
+  font:300 15px/20px 'lato';
 }
 
 
