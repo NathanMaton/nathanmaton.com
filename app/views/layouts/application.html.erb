@@ -14,13 +14,9 @@
         name    : 'Achilles',
         friends : 854
       });
-      $('#tracking').click(function () {
-          // do the useful thing...
-          // then track that it happened
-          analytics.track('Purchased an Item', {
-            revenue  : 39.95,
-            shipping : '2-day'
-        });
+      var testLink = $('#tracking'); 
+      analytics.trackLink(testLink, 'Clicked Free-Trial Link', {
+        plan : 'Enterprise'
       });
    
     </script>
