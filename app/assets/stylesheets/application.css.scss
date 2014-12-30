@@ -1,0 +1,269 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap";
+
+
+$cream: #fbfbfb;
+$darkgrey: #272727;
+$orange: #ff9933;
+$lightpurple: #9999ff;
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+
+ /* padding-top: 60px;*/
+ /* bg color ADDED BY NATHAN 9.3.12 */
+ background-color: $darkgrey;
+
+}
+
+h1{
+  font-family:'Arial'
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* NATHAN'S CUSTOM CSS */
+
+li{
+  padding-bottom: 10px;
+}
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+a{
+cursor: auto;
+color:#9999ff;
+}
+
+/*HEADER*/
+.header {
+width: 100%;
+height: 100px;
+background-color: $cream;
+font-family: "Helvetica-Neue";
+}
+
+.header ul {
+  /*float: right;*/
+  list-style: none;
+ /* padding-left: 150px;*/
+}
+
+.header ul li {
+  float: left;
+  margin-left: 0px;
+  padding-right: 20px;
+  
+}
+
+.header a {
+  color: #333;
+}  
+
+/*
+.header a:hover { 
+  color: ##9999ff;
+}
+*/
+.logo {
+font-family: 'LeagueGothicRegular', Arial, sans-serif;
+font-weight: normal;
+font-size: 3.6em;
+letter-spacing: 0;
+text-transform: uppercase;
+float: left;
+padding: 30px 0px 0px 30px;
+
+}
+
+.logo:hover, .header a:hover {
+  color: #9999ff;
+  text-decoration: none;
+}
+
+.tagline {
+float: left;
+font-family: 'PTSansNarrowRegular', Arial, sans-serif;
+font-size: 21px;
+padding: 23px 0px 0px 30px;
+}
+
+.header_contact_info {
+font-family: 'PTSansNarrowRegular', Arial, sans-serif;
+font-size: 14px;
+padding-top: 5px;
+position: relative;
+left: -25px;
+}
+
+
+/* BODY */
+
+img {
+
+float:left;
+}
+
+.main_container {
+overflow: hidden;
+padding-top: 30px;
+padding-left: 30px;
+width: 1000px;
+}
+
+.featured {
+padding-right:4px;
+padding-bottom: 4px;
+width: 320px;
+opacity: .9;
+
+height: 320px;
+float:left;
+
+}
+
+.regular {
+padding-right:4px;
+padding-bottom: 4px;
+float: left;
+opacity: .9;
+width: 320px;
+height: 170px;
+
+}
+
+#img_label {
+color: white;
+font-family: Arial;
+float:right;
+/*opacity:.9;*/
+margin-top:-70px;
+font-size: 20px;
+background-color: $orange;
+padding:8px 24px 6px 20px;
+}
+
+.img_label:hover, #img_label_about:hover, .regular:hover, .featured:hover {
+opacity: 1;
+}
+
+#img_label_about {
+color: white;
+font-family: Arial;
+float:right;
+margin-top:-70px;
+font-size: 20px;
+background-color: $orange;
+padding:8px 24px 16px 20px;
+}
+
+#subcaption{
+color: black;
+font-size: 10px;
+float:left;
+}
+
+
+.large_image {
+
+}
+
+/* INSIDE PAGE STYLES */
+#full_img{
+overflow:hidden;
+width:630px;
+padding-bottom: 4px;
+}
+
+#img_caption{
+width:300px;
+font-weight: bold;
+background-color: #fbfbfb;
+color: black;
+float:left;
+text-align: left;
+display: inline;
+position: absolute;
+left: 664px;
+top: 130px;
+
+padding: 20px 20px 40px 20px;
+font-family: Arial;
+	h2{
+	color: black;
+  font-family: 'Lato Bold';
+
+	}
+}
+
+.bodyText{
+  font:300 15px/20px 'lato';
+}
+
+
+/* FOOTER  from Rails Tutorial */
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* border-top: 1px solid #21D854;*/
+  background-color: $cream;
+  a {
+  	color: #555; 
+   	&:hover { 
+  		color: #222;
+	}
+  }
+  small {
+  float: left;
+  }
+  ul {
+  	float: right;
+  	list-style: none;
+  	li {
+  		float: left;
+  		margin-left: 10px;
+	}
+  }
+}  
